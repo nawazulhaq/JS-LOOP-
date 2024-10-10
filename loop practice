@@ -1,0 +1,88 @@
+// for loop example
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop Example</title>
+</head>
+<body>
+    <h2>For Loop Example</h2>
+    <p>Numbers from 1 to 5:</p>
+    <ul id="forLoopList"></ul>
+
+    <script>
+        const forLoopList = document.getElementById('forLoopList');
+
+        // For loop to print numbers from 1 to 5
+        for (let i = 1; i <= 5; i++) {
+            const li = document.createElement('li');
+            li.textContent = i;
+            forLoopList.appendChild(li);
+        }
+    </script>
+</body>
+</html>
+
+
+
+// while loop example
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop Example</title>
+</head>
+<body>
+    <h2>While Loop Example</h2>
+    <p>Numbers from 1 to 5:</p>
+    <ul id="whileLoopList"></ul>
+
+    <script>
+        const whileLoopList = document.getElementById('whileLoopList');
+        let i = 1;
+
+        // While loop to print numbers from 1 to 5
+        while (i <= 5) {
+            const li = document.createElement('li');
+            li.textContent = i;
+            whileLoopList.appendChild(li);
+            i++;
+        }
+    </script>
+</body>
+</html>
+
+
+
+// do while loop example
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do-While Loop Example</title>
+</head>
+<body>
+    <h2>Do-While Loop Example</h2>
+    <p>Numbers from 1 to 5:</p>
+    <ul id="doWhileLoopList"></ul>
+
+    <script>
+        const doWhileLoopList = document.getElementById('doWhileLoopList');
+        let i = 1;
+
+        // Do-while loop to print numbers from 1 to 5
+        do {
+            const li = document.createElement('li');
+            li.textContent = i;
+            doWhileLoopList.appendChild(li);
+            i++;
+        } while (i <= 5);
+    </script>
+</body>
+</html>
